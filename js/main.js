@@ -1,9 +1,8 @@
 let myhttp = new XMLHttpRequest()
 let row = document.querySelector(".row")
 let selectedfoods = document.querySelector("select")
-let Search = document.querySelector("Search")
-Search.addEventListener("search" , function(){
-    Search.value = ``
+let Search = document.querySelector("#Search")
+Search.addEventListener("blur" , function(){
     getdata(Search.value)
 })
 selectedfoods.addEventListener("change" , function(){
